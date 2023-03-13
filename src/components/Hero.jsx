@@ -1,4 +1,5 @@
 import React from "react"
+import hero_img from "../images/illustration-working.svg"
 
 export default () => {
   return (
@@ -16,7 +17,7 @@ export default () => {
         </button>
       </div>
       <div className="w-1/2 max-sm:w-full">
-        <img src="/images/illustration-working.svg" alt="" />
+        <img src={hero_img} alt="" />
       </div>
     </section>
   )

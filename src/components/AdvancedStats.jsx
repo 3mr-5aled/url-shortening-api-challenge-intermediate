@@ -1,4 +1,7 @@
 import React from "react"
+import brand_recognition_img from "../images/icon-brand-recognition.svg"
+import detailed_records_img from "../images/icon-detailed-records.svg"
+import fully_customizable_img from "../images/icon-fully-customizable.svg"
 
 export default () => {
   return (
@@ -19,7 +22,7 @@ export default () => {
             <div className="card place-self-start">
               <div className="flex max-sm:items-center max-sm:justify-center">
                 <div className="card__icon">
-                  <img src="/images/icon-brand-recognition.svg" alt="" />
+                  <img src={brand_recognition_img} alt="" />
                 </div>
               </div>
               <h3 className="card__title">Brand Recognition</h3>
@@ -32,7 +35,7 @@ export default () => {
             <div className="card place-self-center">
               <div className="flex max-sm:items-center max-sm:justify-center">
                 <div className="card__icon">
-                  <img src="/images/icon-detailed-records.svg" alt="" />
+                  <img src={detailed_records_img} alt="" />
                 </div>
               </div>
               <h3 className="card__title">Detailed Records</h3>
@@ -45,7 +48,7 @@ export default () => {
             <div className="card place-self-end">
               <div className="flex max-sm:items-center max-sm:justify-center">
                 <div className="card__icon">
-                  <img src="/images/icon-fully-customizable.svg" alt="" />
+                  <img src={fully_customizable_img} alt="" />
                 </div>
               </div>
               <h3 className="card__title">Fully Customizable</h3>

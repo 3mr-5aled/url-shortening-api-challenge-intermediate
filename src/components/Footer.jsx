@@ -1,4 +1,8 @@
 import React from "react"
+import facebook_img from "../images/icon-facebook.svg"
+import instagram_img from "../images/icon-instagram.svg"
+import twitter_img from "../images/icon-twitter.svg"
+import pinterest_img from "../images/icon-pinterest.svg"
 
 export default () => {
   return (
@@ -39,30 +43,10 @@ export default () => {
             </div>
           </div>
           <div className="flex flex-row gap-5 w-fit justify-between max-sm:w-full">
-            <img
-              className="socialIcons"
-              src="/images/icon-facebook.svg"
-              alt=""
-              srcset=""
-            />
-            <img
-              className="socialIcons"
-              src="/images/icon-twitter.svg"
-              alt=""
-              srcset=""
-            />
-            <img
-              className="socialIcons"
-              src="/images/icon-pinterest.svg"
-              alt=""
-              srcset=""
-            />
-            <img
-              className="socialIcons"
-              src="/images/icon-instagram.svg"
-              alt=""
-              srcset=""
-            />
+            <img className="socialIcons" src={facebook_img} alt="" srcset="" />
+            <img className="socialIcons" src={twitter_img} alt="" srcset="" />
+            <img className="socialIcons" src={pinterest_img} alt="" srcset="" />
+            <img className="socialIcons" src={instagram_img} alt="" srcset="" />
           </div>
         </div>
       </div>
