@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import menu_img from "../images/menu_lines_hamburger_icon.svg"
 
 export default () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -41,7 +42,7 @@ export default () => {
             className="mr-5 text-gray-600 font-bold hover:text-opacity-60"
             onClick={toggleMenu}
           >
-            <img src="/images/menu_lines_hamburger_icon.svg" alt="" />
+            <img src={menu_img} alt="" />
           </button>
           <div
             className={`fixed p-20 text-3xl inset-0 bg-white z-20 transition-opacity duration-300 ${
