@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import shortener_img from "../images/bg-boost-desktop.svg"
 
 export default () => {
   const [url, setUrl] = useState("")
@@ -55,7 +56,9 @@ export default () => {
 
   return (
     <div className="bg-gray-200 relative flex justify-center align-middle p-5 h-fit">
-      <div className="absolute -top-24 flex bg-DarkViolet bg-[url('/images/bg-boost-desktop.svg')] items-center p-10 m-3 rounded-xl justify-center w-fit  max-sm:flex-wrap max-sm:p-7 max-sm:m-5 max-sm:items-center">
+      <div
+        className={`absolute -top-24 flex bg-DarkViolet bg-dark-violet-pattern bg-cover items-center p-10 m-3 rounded-xl justify-center w-fit  max-sm:flex-wrap max-sm:p-7 max-sm:m-5 max-sm:items-center`}
+      >
         <input
           className={`bg-white p-5 font-medium text-lg rounded-xl w-[48rem] h-16 max-sm:w-full max-sm:mb-3 max-sm:h-14  ${
             error ? "border-red-500 border-4 italic" : ""
