@@ -83,15 +83,17 @@ export default () => {
             key={index}
             className="my-5 p-5 bg-white flex flex-row text-xl justify-between rounded-xl w-full items-center max-sm:h-fit max-sm:text-sm max-sm:flex-col max-sm:p-5"
           >
-            <p className="font-medium ">{link.original_link}</p>
-            <div className="flex flex-row items-center">
-              <p className="text-Cyan font-bold">{link.full_short_link}</p>
+            <p className="font-medium max-sm:break-all">{link.original_link}</p>
+            <div className="flex flex-row max-sm:flex-wrap items-center">
+              <p className="text-Cyan font-bold max-sm:p-2">
+                {link.full_short_link}
+              </p>
               <button
                 className={`rounded-lg ${
                   buttonStatus[index]
                     ? "bg-DarkViolet"
                     : "bg-Cyan hover:bg-cyan-300"
-                } text-white p-3 mx-3`}
+                } text-white p-3 mx-3 max-sm:p-2 max-sm:mx-1`}
                 onClick={() => handleCopyLink(link.full_short_link, index)}
                 disabled={buttonStatus[index]}
               >

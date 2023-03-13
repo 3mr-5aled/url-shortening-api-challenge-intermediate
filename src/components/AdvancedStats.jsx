@@ -16,11 +16,14 @@ export default () => {
         </p>
         <div className="relative">
           <div
-            className="flex flex-row m-10 h-[26rem] 
-          line max-sm:h-fit max-sm:mx-0 max-sm:flex-col"
+            className="relative flex flex-row m-10 h-[26rem] 
+          max-sm:h-fit max-sm:mx-0 max-sm:flex-col"
           >
-            <div className="card place-self-start">
-              <div className="flex max-sm:items-center max-sm:justify-center">
+            <div className="line_container">
+              <span className="line"></span>
+            </div>
+            <div className="card place-self-start max-sm:place-self-center">
+              <div className="cardIcon_container">
                 <div className="card__icon">
                   <img src={brand_recognition_img} alt="" />
                 </div>
@@ -32,8 +35,8 @@ export default () => {
                 content.
               </p>
             </div>
-            <div className="card place-self-center">
-              <div className="flex max-sm:items-center max-sm:justify-center">
+            <div className="card place-self-center max-sm:place-self-center">
+              <div className="cardIcon_container">
                 <div className="card__icon">
                   <img src={detailed_records_img} alt="" />
                 </div>
@@ -45,8 +48,8 @@ export default () => {
                 decisions.
               </p>
             </div>
-            <div className="card place-self-end">
-              <div className="flex max-sm:items-center max-sm:justify-center">
+            <div className="card place-self-end max-sm:place-self-center">
+              <div className="cardIcon_container">
                 <div className="card__icon">
                   <img src={fully_customizable_img} alt="" />
                 </div>
